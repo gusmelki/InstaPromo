@@ -1,26 +1,61 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="S3g-CC-0xQ">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Sobre-->
+        <scene sceneID="4oo-3t-Tni">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="InstaPromo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Zmd-ey-Z3d" customClass="AboutViewController" customModule="InstaPromo" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                        <viewControllerLayoutGuide type="top" id="ncr-g8-r33"/>
+                        <viewControllerLayoutGuide type="bottom" id="Bij-dp-WkW"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" contentMode="scaleToFill" id="Qaz-Ct-BLI">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Sobre" id="TfB-MH-n2B"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oBi-cz-eHw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1770" y="446"/>
+        </scene>
+        <!--Promo View Controller-->
+        <scene sceneID="Ps5-NW-nbI">
+            <objects>
+                <viewController id="S3g-CC-0xQ" customClass="PromoViewController" customModule="InstaPromo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ZvD-pT-g8C"/>
+                        <viewControllerLayoutGuide type="bottom" id="9cD-Ml-Iez"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="cWf-re-8AC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Iop-tW-KSC">
+                                <rect key="frame" x="0.0" y="20" width="600" height="580"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Iop-tW-KSC" firstAttribute="top" secondItem="ZvD-pT-g8C" secondAttribute="bottom" id="MEO-sQ-sN0"/>
+                            <constraint firstItem="Iop-tW-KSC" firstAttribute="leading" secondItem="cWf-re-8AC" secondAttribute="leading" id="UKb-to-4iy"/>
+                            <constraint firstItem="9cD-Ml-Iez" firstAttribute="top" secondItem="Iop-tW-KSC" secondAttribute="bottom" id="UPG-27-orC"/>
+                            <constraint firstAttribute="trailing" secondItem="Iop-tW-KSC" secondAttribute="trailing" id="aGS-rf-Kg1"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="Iop-tW-KSC" id="Ej5-WG-yqS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yPA-YS-KDZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-479" y="-396"/>
         </scene>
     </scenes>
 </document>
