@@ -14,6 +14,10 @@
 		1A65C6961D1D6F4B00CB8978 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A65C6941D1D6F4B00CB8978 /* LaunchScreen.storyboard */; };
 		1A65C6A11D1D6F4B00CB8978 /* InstaPromoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A65C6A01D1D6F4B00CB8978 /* InstaPromoTests.swift */; };
 		1A65C6AC1D1D6F4B00CB8978 /* InstaPromoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A65C6AB1D1D6F4B00CB8978 /* InstaPromoUITests.swift */; };
+		1A65C6BA1D1D74EF00CB8978 /* Promo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A65C6B91D1D74EF00CB8978 /* Promo.swift */; };
+		1E3DA1B368CAEE19A0FB783A /* Pods_InstaPromoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5767E4A3825F5F4FB9010682 /* Pods_InstaPromoUITests.framework */; };
+		BD943BD869912E65AC446E7B /* Pods_InstaPromo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5794F643872D1080F294E50F /* Pods_InstaPromo.framework */; };
+		C5682F3994874F2BF95699E6 /* Pods_InstaPromoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACE20203D5B5810646F26D5 /* Pods_InstaPromoTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		19AB69E768EFF5450F1668AD /* Pods-InstaPromoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstaPromoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-InstaPromoTests/Pods-InstaPromoTests.release.xcconfig"; sourceTree = "<group>"; };
 		1A65C6881D1D6F4B00CB8978 /* InstaPromo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstaPromo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A65C68B1D1D6F4B00CB8978 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1A65C68D1D1D6F4B00CB8978 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +52,15 @@
 		1A65C6A71D1D6F4B00CB8978 /* InstaPromoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InstaPromoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A65C6AB1D1D6F4B00CB8978 /* InstaPromoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstaPromoUITests.swift; sourceTree = "<group>"; };
 		1A65C6AD1D1D6F4B00CB8978 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1A65C6B91D1D74EF00CB8978 /* Promo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Promo.swift; sourceTree = "<group>"; };
+		1E1137110DFD5D9131CD15AA /* Pods-InstaPromoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstaPromoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-InstaPromoTests/Pods-InstaPromoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		3BD9F7DAA94DFB1B99C73C38 /* Pods-InstaPromo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstaPromo.release.xcconfig"; path = "Pods/Target Support Files/Pods-InstaPromo/Pods-InstaPromo.release.xcconfig"; sourceTree = "<group>"; };
+		5767E4A3825F5F4FB9010682 /* Pods_InstaPromoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InstaPromoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5794F643872D1080F294E50F /* Pods_InstaPromo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InstaPromo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8BD0F200DEB1215504C312C2 /* Pods-InstaPromo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstaPromo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-InstaPromo/Pods-InstaPromo.debug.xcconfig"; sourceTree = "<group>"; };
+		AACE20203D5B5810646F26D5 /* Pods_InstaPromoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InstaPromoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F14A187A3BC2763ABE24CCF5 /* Pods-InstaPromoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstaPromoUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-InstaPromoUITests/Pods-InstaPromoUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		FBC44A5D7698BBE001F2E724 /* Pods-InstaPromoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstaPromoUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-InstaPromoUITests/Pods-InstaPromoUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD943BD869912E65AC446E7B /* Pods_InstaPromo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C5682F3994874F2BF95699E6 /* Pods_InstaPromoTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E3DA1B368CAEE19A0FB783A /* Pods_InstaPromoUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +98,8 @@
 				1A65C69F1D1D6F4B00CB8978 /* InstaPromoTests */,
 				1A65C6AA1D1D6F4B00CB8978 /* InstaPromoUITests */,
 				1A65C6891D1D6F4B00CB8978 /* Products */,
+				BB2E71DD6FA77BC06EEAAB87 /* Pods */,
+				1C048B396C3BF30E2C4489CD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,6 +118,7 @@
 			children = (
 				1A65C68B1D1D6F4B00CB8978 /* AppDelegate.swift */,
 				1A65C68D1D1D6F4B00CB8978 /* ViewController.swift */,
+				1A65C6B91D1D74EF00CB8978 /* Promo.swift */,
 				1A65C68F1D1D6F4B00CB8978 /* Main.storyboard */,
 				1A65C6921D1D6F4B00CB8978 /* Assets.xcassets */,
 				1A65C6941D1D6F4B00CB8978 /* LaunchScreen.storyboard */,
@@ -125,6 +145,29 @@
 			path = InstaPromoUITests;
 			sourceTree = "<group>";
 		};
+		1C048B396C3BF30E2C4489CD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5794F643872D1080F294E50F /* Pods_InstaPromo.framework */,
+				AACE20203D5B5810646F26D5 /* Pods_InstaPromoTests.framework */,
+				5767E4A3825F5F4FB9010682 /* Pods_InstaPromoUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BB2E71DD6FA77BC06EEAAB87 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8BD0F200DEB1215504C312C2 /* Pods-InstaPromo.debug.xcconfig */,
+				3BD9F7DAA94DFB1B99C73C38 /* Pods-InstaPromo.release.xcconfig */,
+				1E1137110DFD5D9131CD15AA /* Pods-InstaPromoTests.debug.xcconfig */,
+				19AB69E768EFF5450F1668AD /* Pods-InstaPromoTests.release.xcconfig */,
+				F14A187A3BC2763ABE24CCF5 /* Pods-InstaPromoUITests.debug.xcconfig */,
+				FBC44A5D7698BBE001F2E724 /* Pods-InstaPromoUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +175,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1A65C6B01D1D6F4B00CB8978 /* Build configuration list for PBXNativeTarget "InstaPromo" */;
 			buildPhases = (
+				8A5DF16A3379523DDC0B4CC6 /* [CP] Check Pods Manifest.lock */,
 				1A65C6841D1D6F4B00CB8978 /* Sources */,
 				1A65C6851D1D6F4B00CB8978 /* Frameworks */,
 				1A65C6861D1D6F4B00CB8978 /* Resources */,
+				2F9884B7C1971181D6A6C9DD /* [CP] Embed Pods Frameworks */,
+				41C081293B91C29CC7FF0680 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -149,9 +195,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1A65C6B31D1D6F4B00CB8978 /* Build configuration list for PBXNativeTarget "InstaPromoTests" */;
 			buildPhases = (
+				9C340592DEC722035DAB81AC /* [CP] Check Pods Manifest.lock */,
 				1A65C6981D1D6F4B00CB8978 /* Sources */,
 				1A65C6991D1D6F4B00CB8978 /* Frameworks */,
 				1A65C69A1D1D6F4B00CB8978 /* Resources */,
+				4AA4948313935FB4C9CB929A /* [CP] Embed Pods Frameworks */,
+				13F961838E94018985B9AFAD /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -167,9 +216,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1A65C6B61D1D6F4B00CB8978 /* Build configuration list for PBXNativeTarget "InstaPromoUITests" */;
 			buildPhases = (
+				7F3B1905282406A09EC439A8 /* [CP] Check Pods Manifest.lock */,
 				1A65C6A31D1D6F4B00CB8978 /* Sources */,
 				1A65C6A41D1D6F4B00CB8978 /* Frameworks */,
 				1A65C6A51D1D6F4B00CB8978 /* Resources */,
+				864B6B513180F139AC013774 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -251,11 +302,135 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		13F961838E94018985B9AFAD /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-InstaPromoTests/Pods-InstaPromoTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2F9884B7C1971181D6A6C9DD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-InstaPromo/Pods-InstaPromo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		41C081293B91C29CC7FF0680 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-InstaPromo/Pods-InstaPromo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4AA4948313935FB4C9CB929A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-InstaPromoTests/Pods-InstaPromoTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7F3B1905282406A09EC439A8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		864B6B513180F139AC013774 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-InstaPromoUITests/Pods-InstaPromoUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8A5DF16A3379523DDC0B4CC6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9C340592DEC722035DAB81AC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		1A65C6841D1D6F4B00CB8978 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A65C6BA1D1D74EF00CB8978 /* Promo.swift in Sources */,
 				1A65C68E1D1D6F4B00CB8978 /* ViewController.swift in Sources */,
 				1A65C68C1D1D6F4B00CB8978 /* AppDelegate.swift in Sources */,
 			);
@@ -399,6 +574,7 @@
 		};
 		1A65C6B11D1D6F4B00CB8978 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8BD0F200DEB1215504C312C2 /* Pods-InstaPromo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = InstaPromo/Info.plist;
@@ -410,6 +586,7 @@
 		};
 		1A65C6B21D1D6F4B00CB8978 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3BD9F7DAA94DFB1B99C73C38 /* Pods-InstaPromo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = InstaPromo/Info.plist;
@@ -421,6 +598,7 @@
 		};
 		1A65C6B41D1D6F4B00CB8978 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1E1137110DFD5D9131CD15AA /* Pods-InstaPromoTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = InstaPromoTests/Info.plist;
@@ -433,6 +611,7 @@
 		};
 		1A65C6B51D1D6F4B00CB8978 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 19AB69E768EFF5450F1668AD /* Pods-InstaPromoTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = InstaPromoTests/Info.plist;
@@ -445,6 +624,7 @@
 		};
 		1A65C6B71D1D6F4B00CB8978 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F14A187A3BC2763ABE24CCF5 /* Pods-InstaPromoUITests.debug.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = InstaPromoUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -456,6 +636,7 @@
 		};
 		1A65C6B81D1D6F4B00CB8978 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FBC44A5D7698BBE001F2E724 /* Pods-InstaPromoUITests.release.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = InstaPromoUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -484,6 +665,7 @@
 				1A65C6B21D1D6F4B00CB8978 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1A65C6B31D1D6F4B00CB8978 /* Build configuration list for PBXNativeTarget "InstaPromoTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +674,7 @@
 				1A65C6B51D1D6F4B00CB8978 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1A65C6B61D1D6F4B00CB8978 /* Build configuration list for PBXNativeTarget "InstaPromoUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +683,7 @@
 				1A65C6B81D1D6F4B00CB8978 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
