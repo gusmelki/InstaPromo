@@ -9,6 +9,7 @@
 import UIKit
 import Parse
 import Alamofire
+import SwiftyJSON
 
 class PostViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UITextFieldDelegate {
 
@@ -17,13 +18,12 @@ class PostViewController: UIViewController, UIImagePickerControllerDelegate, UIN
     @IBOutlet weak var desc: UITextField!
     @IBOutlet weak var preco: UITextField!
     
+    var arrRes = [[String:AnyObject]]()
     let apiBase = "https://api.imgur.com/3"
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
 
         // Do any additional setup after loading the view.
     }
@@ -91,31 +91,47 @@ class PostViewController: UIViewController, UIImagePickerControllerDelegate, UIN
     }
 
     @IBAction func postarPromocao(sender: AnyObject) {
-        
-        
         let loadingNotification = MBProgressHUD.showHUDAddedTo(self.view, animated: true)
         loadingNotification.mode = MBProgressHUDMode.Indeterminate
         loadingNotification.labelText = "Postando... =)"
         
-       
+        let headers = [
+            "Authorization": "Client-ID 006e897cd5ac791",
+            "Accept": "application/json"
+        ]
         
-            let promo = PFObject(className: "promo")
-            promo["local"] = local.text
-            promo["desc"] = desc.text
-            promo["preco"] = preco.text
-            //promo["urlImg"] = urlImg
-
-            promo.saveInBackgroundWithBlock { (success: Bool, error: NSError?) -> Void in
-                if error != nil{
-                        print("Object has been saved.")
-                    MBProgressHUD.hideAllHUDsForView(self.view, animated: true)
-                }else{
-                        print("Error")
-                        MBProgressHUD.hideAllHUDsForView(self.view, animated: true)
+        let imageData: NSData = UIImagePNGRepresentation(self.imageView.image!)!
+        
+        Alamofire.upload(.POST, "https://api.imgur.com/3/upload", headers: headers, data: imageData)
+            .responseJSON {
+              response in
+                switch response.result {
+                case .Success(let data):
+                    let json = JSON(data)
+                    let link = json["data"]["link"].stringValue
+                    
+                    let promo = PFObject(className: "promo")
+                    promo["local"] = self.local.text
+                    promo["desc"] = self.desc.text
+                    promo["preco"] = self.preco.text
+                    promo["urlImg"] = link
+                    
+                    promo.saveInBackgroundWithBlock { (success: Bool, error: NSError?) -> Void in
+                        if error == nil{
+                            print("Object has been saved.")
+                            MBProgressHUD.hideAllHUDsForView(self.view, animated: true)
+                        }else{
+                            print("Error--Error")
+                            MBProgressHUD.hideAllHUDsForView(self.view, animated: true)
+                        }
+                    }
+                    
+                case .Failure(let error):
+                    print(error)
                 }
-            }  
-    }
-
+            }
+        }
+    
     /*
     // MARK: - Navigation
 

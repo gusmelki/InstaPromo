@@ -8,6 +8,8 @@ target 'InstaPromo' do
   # Pods for InstaPromo
 	pod ‘Parse’	
 	pod 'Alamofire', '~> 3.4'
+    pod 'SwiftyJSON'
+
   target 'InstaPromoTests' do
     inherit! :search_paths
     # Pods for testing
