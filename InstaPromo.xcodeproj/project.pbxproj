@@ -16,7 +16,8 @@
 		1A65C6BA1D1D74EF00CB8978 /* Promo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A65C6B91D1D74EF00CB8978 /* Promo.swift */; };
 		1A65C6BE1D1D79A700CB8978 /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A65C6BD1D1D79A700CB8978 /* PostViewController.swift */; };
 		1A65C6C01D1D79BF00CB8978 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A65C6BF1D1D79BF00CB8978 /* AboutViewController.swift */; };
-		1A65C7041D1D981600CB8978 /* PromoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A65C7031D1D981600CB8978 /* PromoViewController.swift */; };
+		1A65C7061D1D9C3200CB8978 /* PromoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A65C7051D1D9C3200CB8978 /* PromoTableViewController.swift */; };
+		1A65C77E1D1D9F5400CB8978 /* PromoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A65C77D1D1D9F5400CB8978 /* PromoTableViewCell.swift */; };
 		1E3DA1B368CAEE19A0FB783A /* Pods_InstaPromoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5767E4A3825F5F4FB9010682 /* Pods_InstaPromoUITests.framework */; };
 		BD943BD869912E65AC446E7B /* Pods_InstaPromo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5794F643872D1080F294E50F /* Pods_InstaPromo.framework */; };
 		C5682F3994874F2BF95699E6 /* Pods_InstaPromoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACE20203D5B5810646F26D5 /* Pods_InstaPromoTests.framework */; };
@@ -56,7 +57,8 @@
 		1A65C6B91D1D74EF00CB8978 /* Promo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Promo.swift; sourceTree = "<group>"; };
 		1A65C6BD1D1D79A700CB8978 /* PostViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
 		1A65C6BF1D1D79BF00CB8978 /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
-		1A65C7031D1D981600CB8978 /* PromoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PromoViewController.swift; sourceTree = "<group>"; };
+		1A65C7051D1D9C3200CB8978 /* PromoTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PromoTableViewController.swift; sourceTree = "<group>"; };
+		1A65C77D1D1D9F5400CB8978 /* PromoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PromoTableViewCell.swift; sourceTree = "<group>"; };
 		1E1137110DFD5D9131CD15AA /* Pods-InstaPromoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstaPromoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-InstaPromoTests/Pods-InstaPromoTests.debug.xcconfig"; sourceTree = "<group>"; };
 		3BD9F7DAA94DFB1B99C73C38 /* Pods-InstaPromo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstaPromo.release.xcconfig"; path = "Pods/Target Support Files/Pods-InstaPromo/Pods-InstaPromo.release.xcconfig"; sourceTree = "<group>"; };
 		5767E4A3825F5F4FB9010682 /* Pods_InstaPromoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InstaPromoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -121,11 +123,12 @@
 			isa = PBXGroup;
 			children = (
 				1A65C68B1D1D6F4B00CB8978 /* AppDelegate.swift */,
+				1A65C7051D1D9C3200CB8978 /* PromoTableViewController.swift */,
 				1A65C6B91D1D74EF00CB8978 /* Promo.swift */,
 				1A65C6BD1D1D79A700CB8978 /* PostViewController.swift */,
 				1A65C6BF1D1D79BF00CB8978 /* AboutViewController.swift */,
 				1A65C68F1D1D6F4B00CB8978 /* Main.storyboard */,
-				1A65C7031D1D981600CB8978 /* PromoViewController.swift */,
+				1A65C77D1D1D9F5400CB8978 /* PromoTableViewCell.swift */,
 				1A65C6921D1D6F4B00CB8978 /* Assets.xcassets */,
 				1A65C6941D1D6F4B00CB8978 /* LaunchScreen.storyboard */,
 				1A65C6971D1D6F4B00CB8978 /* Info.plist */,
@@ -436,11 +439,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1A65C7041D1D981600CB8978 /* PromoViewController.swift in Sources */,
 				1A65C6BE1D1D79A700CB8978 /* PostViewController.swift in Sources */,
 				1A65C6BA1D1D74EF00CB8978 /* Promo.swift in Sources */,
 				1A65C6C01D1D79BF00CB8978 /* AboutViewController.swift in Sources */,
+				1A65C7061D1D9C3200CB8978 /* PromoTableViewController.swift in Sources */,
 				1A65C68C1D1D6F4B00CB8978 /* AppDelegate.swift in Sources */,
+				1A65C77E1D1D9F5400CB8978 /* PromoTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
