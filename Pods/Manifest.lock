@@ -1,15 +1,18 @@
 PODS:
   - Bolts/Tasks (1.7.0)
+  - MBProgressHUD (0.9.2)
   - Parse (1.13.0):
     - Bolts/Tasks (~> 1.6)
 
 DEPENDENCIES:
+  - MBProgressHUD (~> 0.9.2)
   - Parse
 
 SPEC CHECKSUMS:
   Bolts: a0058fa3b331c5a1e4402d534f2dae36dbff31e4
+  MBProgressHUD: 1569cf7ace17a8bac47aabfbb8580a49690386d1
   Parse: f51c24d2feb412e4b2d6cc73d37cb24e8d0089bc
 
-PODFILE CHECKSUM: 7eb27ddf1e6c72f076890926aa5fb8fdcbde9358
+PODFILE CHECKSUM: e5ac4349a08af4c6c8c9f80f0af50dbd1803c9d7
 
 COCOAPODS: 1.0.1

@@ -7,6 +7,7 @@ target 'InstaPromo' do
 
   # Pods for InstaPromo
 	pod ‘Parse’	
+	pod 'MBProgressHUD', '~> 0.9.2'
 
   target 'InstaPromoTests' do
     inherit! :search_paths

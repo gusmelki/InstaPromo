@@ -253,6 +253,7 @@
 				TargetAttributes = {
 					1A65C6871D1D6F4B00CB8978 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = GAY8P2P3HP;
 					};
 					1A65C69B1D1D6F4B00CB8978 = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -589,10 +590,13 @@
 			baseConfigurationReference = 8BD0F200DEB1215504C312C2 /* Pods-InstaPromo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = InstaPromo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.instapromo.InstaPromo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -601,10 +605,13 @@
 			baseConfigurationReference = 3BD9F7DAA94DFB1B99C73C38 /* Pods-InstaPromo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = InstaPromo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.instapromo.InstaPromo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};

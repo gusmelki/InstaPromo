@@ -10,7 +10,12 @@ import UIKit
 
 class PromoTableViewCell: UITableViewCell {
 
+    
+    
+    @IBOutlet weak var prmoImage: UIImageView!
     @IBOutlet weak var local: UILabel!
+    @IBOutlet weak var desc: UITextView!
+    @IBOutlet weak var preco: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()

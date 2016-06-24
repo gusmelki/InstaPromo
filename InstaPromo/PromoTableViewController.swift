@@ -13,6 +13,9 @@ class PromoTableViewController: UITableViewController {
 
     var promos = [Promo]()
     
+    // MARK: - Private Objects
+    var session: NSURLSession?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -47,9 +50,27 @@ class PromoTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCellWithIdentifier("CellID", forIndexPath: indexPath) as! PromoTableViewCell
 
         let index = indexPath.row
-        print(index)
         
         cell.local.text = self.promos[index].local
+        cell.desc.text = self.promos[index].desc
+        cell.preco.text = self.promos[index].preco
+    
+        let url = NSURL(string: self.promos[index].urlImg!)!
+        let imageSession = NSURLSession.sharedSession()
+        let imgTask = imageSession.downloadTaskWithURL(url) { (url, response, error) -> Void in
+            if (error == nil) {
+                    if let imageData = NSData(contentsOfURL: url!) {
+                        dispatch_async(dispatch_get_main_queue(), {
+                            cell.prmoImage.image = UIImage(data: imageData)
+                        })
+                    }
+                } else {
+                    print(error)
+                    print("Erro ao baixar imagem")
+                }
+            }
+            imgTask.resume()
+        
 
         return cell
     }
@@ -124,6 +145,10 @@ class PromoTableViewController: UITableViewController {
                         if let urlImg = object["urlImg"] as? String{
                             promo.urlImg = urlImg
                         }
+                        if let preco = object["preco"] as? String{
+                            promo.preco = preco
+                        }
+                        
                         if let loc = object["loc"] as? PFGeoPoint{
                             promo.latitude = loc.latitude
                             promo.longitude = loc.longitude
@@ -141,6 +166,8 @@ class PromoTableViewController: UITableViewController {
             }
         }
     }
+    
+    
     
 }
 
