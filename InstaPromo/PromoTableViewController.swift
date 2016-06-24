@@ -54,7 +54,7 @@ class PromoTableViewController: UITableViewController {
         cell.local.text = self.promos[index].local
         cell.desc.text = self.promos[index].desc
         cell.preco.text = self.promos[index].preco
-    
+        
         let url = NSURL(string: self.promos[index].urlImg!)!
         let imageSession = NSURLSession.sharedSession()
         let imgTask = imageSession.downloadTaskWithURL(url) { (url, response, error) -> Void in
@@ -70,8 +70,6 @@ class PromoTableViewController: UITableViewController {
                 }
             }
             imgTask.resume()
-        
-
         return cell
     }
  

@@ -8,6 +8,7 @@
 
 import UIKit
 import Parse
+import Alamofire
 
 class PostViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UITextFieldDelegate {
 
@@ -16,8 +17,13 @@ class PostViewController: UIViewController, UIImagePickerControllerDelegate, UIN
     @IBOutlet weak var desc: UITextField!
     @IBOutlet weak var preco: UITextField!
     
+    let apiBase = "https://api.imgur.com/3"
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
 
         // Do any additional setup after loading the view.
     }
@@ -85,25 +91,29 @@ class PostViewController: UIViewController, UIImagePickerControllerDelegate, UIN
     }
 
     @IBAction func postarPromocao(sender: AnyObject) {
-            
-            //let point = PFGeoPoint(latitude: latitude!, longitude: longitude!)
-            
+        
+        
+        let loadingNotification = MBProgressHUD.showHUDAddedTo(self.view, animated: true)
+        loadingNotification.mode = MBProgressHUDMode.Indeterminate
+        loadingNotification.labelText = "Postando... =)"
+        
+       
+        
             let promo = PFObject(className: "promo")
-            promo["local"] = local
-            promo["desc"] = desc
-            promo["preco"] = preco
+            promo["local"] = local.text
+            promo["desc"] = desc.text
+            promo["preco"] = preco.text
             //promo["urlImg"] = urlImg
 
             promo.saveInBackgroundWithBlock { (success: Bool, error: NSError?) -> Void in
                 if error != nil{
-                    print("Object has been saved.")
+                        print("Object has been saved.")
+                    MBProgressHUD.hideAllHUDsForView(self.view, animated: true)
                 }else{
-                    print("Error")
+                        print("Error")
+                        MBProgressHUD.hideAllHUDsForView(self.view, animated: true)
                 }
-            }
-    
-        
-        
+            }  
     }
 
     /*

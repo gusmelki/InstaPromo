@@ -4,12 +4,12 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Bolts.xcscheme</key>
+		<key>Alamofire.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>MBProgressHUD.xcscheme</key>
+		<key>Bolts.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -42,12 +42,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>309B5110045AF88D88D6F9EE78E1996A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>4380503F5EF34C83237AEB9F1297EBE7</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>96E14554C8E23AF93F1F76891934E4F5</key>
+		<key>79C040AFDDCE1BCBF6D8B5EB0B85887F</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -58,11 +63,6 @@
 			<true/>
 		</dict>
 		<key>D76151F3360E12FBE240D2AD4D0FFD81</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>E61CE3B6DFA1FE6B3E296965C76C0E10</key>
 		<dict>
 			<key>primary</key>
 			<true/>
